@@ -1,5 +1,5 @@
 // Load Stripe and cart
-const stripe = Stripe('pk_test_51RWISXQXELz6UtXwBvAklRxIBkcMn4LdRb6O1qIVyRhCVoLdz7lzrSuLtIE7HPmQsVDzANadRoGjVVsGawhr8SOk00k53KIQrM');
+const stripe = Stripe('');
 
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
