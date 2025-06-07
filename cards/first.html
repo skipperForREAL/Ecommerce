@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Lending Sold</title>
+    <style>
+        body { 
+            background-color:#808080;
+            font-family: Arial, sans-serif; 
+            text-align:center;
+             padding: 20px;
+        }
+        .card {
+             border: 1px solid #ddd;
+              padding: 20px;
+               max-width: 300px; 
+               margin: 0 auto;
+             }
+        button { 
+            background-color: #4CAF50; 
+             color: white;
+              padding: 10px 20px; border: none;
+               cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Golden Lending Sold</h2>
+        <p>A luxurious golden-tinted lending stool, perfect for modern interiors.</p>
+        <p><strong>$599.99</strong></p>
+        <button onclick="addToCart('Golden Lending Sold', 599.99)">Add to Cart</button>
+    </div>
+
+    <script>
+        function addToCart(item, price) {
+            alert(`Added ${item} ($${price}) to cart!`);
+            // Redirect to checkout or cart page
+            window.location.href = "./checkout.html";
+        }
+    </script>
+</body>
+</html>

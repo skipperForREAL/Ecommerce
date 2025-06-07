@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">FurniShop</a>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search for furniture...">
+            <button>Search</button>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="./about.html">AboutUs</a>
+            <a href="./contact.html">Contact</a>
+            <a href="#">Orders</a>
+            <div class="cart" onclick="window.location.href='/cart'">
+                <span>Cart</span>
+                <span id="cart-count">[0]</span>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="hero">
+        <a href="#">Today's Deals</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Registry</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Sell</a>
+    </div>
+    
+    <main class="main">
+        <h1 class="section-title">Featured Furniture</h1>
+        <!-- first card -->
+        <div class="cards-container">
+            <div class="card" data-id="1" data-name="Modern Leather Sofa" data-price="43700.99">
+                <div class="card-img">
+                    <img src="./furnitures/Sofa2.jpg" alt="Modern Leather Sofa">
+                </div>
+                <div class="card-content" onclick="window.location.href='./cards/first.html'">
+                    <h3 class="card-title">Modern Leather Sofa</h3>
+                    <div class="card-price">43,700.99Tsh</div>
+                    <button class="card-btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- second card -->
+            <div class="card" data-id="2" data-name="Wooden Dining Table Set" data-price="45899.99">
+                <div class="card-img">
+                    <img src="./furnitures/table.jpg" alt="Wooden Dining Table Set">
+                </div>
+                <div class="card-content" onclick="window.location.href='./cards/secondCard.html'">
+                    <h3 class="card-title">Wooden Dining Table Set</h3>
+                    <div class="card-price">45,899.99Tsh</div>
+                    <button class="card-btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- third card -->
+            <div class="card" data-id="3" data-name="King Size Bed Frame" data-price="67499.99">
+                <div class="card-img">
+                    <img src="./furnitures/BedDesign.jpg" alt="King Size Bed Frame">
+                </div>
+                <div class="card-content" onclick="window.location.href='./cards/3rdcard.html'">
+                    <h3 class="card-title">King Size Bed Frame</h3>
+                    <div class="card-price">67,499.99Tsh</div>
+                    <button class="card-btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- fourth card -->
+            <div class="card" data-id="4" data-name="Ergonomic Office Chair" data-price="56249.99">
+                <div class="card-img">
+                    <img src="./furnitures/chair2.jpg" alt="Ergonomic Office Chair">
+                </div>
+                <div class="card-content" onclick="window.location.href='./cards/4th.html'">
+                    <h3 class="card-title">Ergonomic Office Chair</h3>
+                    <div class="card-price">56,249.99Tsh</div>
+                    <button class="card-btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <h1 class="section-title">Home Office Furniture</h1>
+        <!-- fifth card -->
+        <div class="cards-container">
+            <div class="card" data-id="5" data-name="Executive Wood Desk" data-price="54349.99">
+                <div class="card-img">
+                    <img src="./furnitures/sittingtable.jpg" alt="Executive Wood Desk">
+                </div>
+                <div class="card-content" onclick="window.location.href='./cards/5th.html'">
+                    <h3 class="card-title">Executive Wood Desk</h3>
+                    <div class="card-price">54,349.99Tsh</div>
+                    <button class="card-btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- sixth card -->
+            <div class="card" data-id="6" data-name="Modern Bookshelf" data-price="50199.99">
+                <div class="card-img">
+                    <img src="./furnitures/bookshelf.jpg" alt="Modern Bookshelf">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Modern Bookshelf</h3>
+                    <div class="card-price">50,199.99Tsh</div>
+                    <button class="card-btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- 7th card -->
+            <div class="card" data-id="7" data-name="Metal Filing Cabinet" data-price="78129.99">
+                <div class="card-img">
+                    <img src="./furnitures/standingshelf.jpg" alt="Metal Filing Cabinet">
+                </div>
+                <div class="card-content" onclick="window.location.href='./cards/6th.html'">
+                    <h3 class="card-title">Metal Filing Cabinet</h3>
+                    <div class="card-price">78,129.99Tsh</div>
+                    <button class="card-btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- 8th card -->
+            <div class="card" data-id="8" data-name="Adjustable Standing Desk" data-price="38429.99">
+                <div class="card-img">
+                    <img src="./furnitures/shelf1.jpg" alt="Adjustable Standing Desk">
+                </div>
+                <div class="card-content" onclick="window.location.href='./cards/7th.html'">
+                    <h3 class="card-title">Adjustable Standing Desk</h3>
+                    <div class="card-price">38,429.99Tsh</div>
+                    <button class="card-btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="./about.html">About </a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#"> Devices</a></li>
+                    <li><a href="#"> Science</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li><a href="#">Sell products with us</a></li>
+                    <li><a href="#">Sell on  Business</a></li>
+                    <li><a href="#">Sell on apps  </a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Advertise Your Products</a></li>
+                    <li><a href="#">Self-Publish with Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3> Payment Products</h3>
+                <ul>
+                    <li><a href="#"> Business Card</a></li>
+                    <li><a href="#">Shop with Points</a></li>
+                    <li><a href="#">Reload Your Balance</a></li>
+                    <li><a href="#"> Currency Converter</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li><a href="#"> and COVID-19</a></li>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Your Orders</a></li>
+                    <li><a href="#">Shipping Rates &amp; Policies</a></li>
+                    <li><a href="#">Returns &amp; Replacements</a></li>
+                    <li><a href="#">Manage Your Content and Devices</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 FurniShop, Inc. or its affiliates</p>
+        </div>
+    </footer>
+        
+        <!-- ... (keep your existing footer code) ... -->
+
+
+    <script>
+        // Cart functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize cart from localStorage or create empty array
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            
+            // Update cart count display
+            function updateCartCount() {
+                const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+                document.getElementById('cart-count').textContent = `[${totalItems}]`;
+            }
+            
+            // Add to cart functionality
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.stopPropagation(); // Prevent triggering the card-content click
+                    
+                    const card = this.closest('.card');
+                    const product = {
+                        id: card.dataset.id,
+                        name: card.dataset.name,
+                        price: parseFloat(card.dataset.price),
+                        quantity: 1
+                    };
+                    
+                    // Check if product already exists in cart
+                    const existingItem = cart.find(item => item.id === product.id);
+                    if (existingItem) {
+                        existingItem.quantity += 1;
+                    } else {
+                        cart.push(product);
+                    }
+                    
+                    // Save to localStorage and update display
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    updateCartCount();
+                    
+                    // Visual feedback
+                    this.textContent = 'Added!';
+                    setTimeout(() => {
+                        this.textContent = 'Add to Cart';
+                    }, 1000);
+                });
+            });
+            
+            // Initialize cart count on page load
+            updateCartCount();
+            
+            // Make entire cart div clickable
+            document.querySelector('.cart').addEventListener('click', function() {
+                window.location.href = '/cart';
+            });
+        });
+    </script>
+</body>
+</html>

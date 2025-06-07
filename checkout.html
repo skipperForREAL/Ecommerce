@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - FurniShop</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+  <header>
+    <!-- Same header as home.html -->
+  </header>
+
+  <main class="checkout-container">
+    <h1>Checkout</h1>
+    
+    <div class="checkout-form">
+      <h2>Payment Information</h2>
+      
+      <div id="card-element">
+        <!-- Stripe card element will be inserted here -->
+      </div>
+      
+      <div id="card-errors" role="alert"></div>
+      
+      <button id="submit-payment">Pay Now</button>
+    </div>
+    
+    <div class="order-summary">
+      <h2>Order Summary</h2>
+      <div id="order-items">
+        <!-- Items will be populated by JavaScript -->
+      </div>
+      <div class="order-totals">
+        <p>Subtotal: <span id="checkout-subtotal">$0.00</span></p>
+        <p>Tax: <span id="checkout-tax">$0.00</span></p>
+        <p>Total: <span id="checkout-total">$0.00</span></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="checkout.js"></script>
+</body>
+</html>

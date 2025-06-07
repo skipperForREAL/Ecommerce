@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egot Shelf</title>
+    <style>
+        body { background-color: #808080;font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .card { border: 1px solid #ddd; padding: 20px; max-width: 300px; margin: 0 auto; }
+        button { background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Egot Shelf</h2>
+        <p>Minimalist floating shelf with a matte black finish. Ideal for books or decor.</p>
+        <p><strong>$199.99</strong></p>
+        <button onclick="addToCart('Egot Shelf', 199.99)">Add to Cart</button>
+    </div>
+
+    <script>
+        function addToCart(item, price) {
+            alert(`Added ${item} ($${price}) to cart!`);
+            window.location.href = "checkout.html";
+        }
+    </script>
+</body>
+</html>
